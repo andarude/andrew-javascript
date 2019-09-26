@@ -64,6 +64,25 @@
     let try01 = makeSquare(3);
     console.log(try01);
 
+    // Functions!
+
+    function makeName(first, middle, last) {
+      let fullName = first + " " + middle + " " + last;
+      return fullName
+    };
+
+    console.log(makeName("Дмитрий", "Дмитриевич", "Шостакович"));
+    console.log(makeName("Robert", "\"Beto\"", "O'Rourke"));
+
+    // Seeing if using a different alphabet breaks a function
+
+    function борщ(овощи, рецепт) {
+      let borsch = овощи + рецепт;
+      return borsch;
+    };
+
+    console.log(борщ("beet", "stew")); // she works!!
+
   </script>
 
 </body>
