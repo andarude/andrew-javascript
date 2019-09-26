@@ -83,6 +83,48 @@
 
     console.log(борщ("beet", "stew")); // she works!!
 
+    // makeBetterName
+
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("Donald", "F", "Trump"));
+
+    // adding and updating makeBetterName
+
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      } else {
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      }
+    };
+
+    // functions on my own
+
+    function whoWon(home, away) {
+      if (home > away) {
+        return "The home team won."
+      } else if (home < away) {
+        return "The away team won."
+      } else {
+        return "Tie game. "
+      }
+    }; //working!
+
+    console.log(whoWon(21, 7));
+    console.log(whoWon(1, 99));
+    console.log(whoWon(33, 33));
+
   </script>
 
 </body>
